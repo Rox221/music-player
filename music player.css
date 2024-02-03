@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    height: 100vh;
+    color: #fff;
+    background-color: #e0e5ec;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.player-container {
+    position: relative;
+    overflow: hidden;
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.player-container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('elemental.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    filter: blur(15px); /* blur intensity */
+    z-index: -1;
+}
+
+button {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:focus,
+button:active {
+  outline: none !important;
+  border: none !important;
+  transform: scale(1.1);
+}
+
+/* For mobile Safari */
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.song-cover-img{
+  border-radius: 30px;
+}
+.artist{
+  opacity: 0.6;
+}
+.heart-icon{
+	border: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	font-size: 1.25rem;
+	transition: .25s ease;
+	box-shadow: 0 0 0 1px rgba(#000, .05), 0 3px 8px 0 rgba(#000, .15);
+	z-index: 1;
+	cursor: pointer;
+	svg {
+		width: 1em;
+		height: 1em;
+	}
+	
+}
+
+/* ::-moz-range-progress for Firefox, ::-ms-fill-lower for IE, ::before for Webkit browsers */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    width: 90%;
+    margin-left: 10px;
+    background: #beb6b4;
+    border-radius: 2.5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fffefc; /*color for the thumb (circle) */
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #fffefc; /*color for the thumb (circle) */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.duration-time{
+  opacity: 0.6;
+}
+#previousBtn .previous{
+  font-size: 30px;
+}
+#playBtn .play{
+  font-size: 45px;
+}
+#nextBtn .next{
+  font-size: 30px;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+.player-container{
+    width: 22rem;
+ }
+
+
+}
