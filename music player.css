@@ -13,6 +13,11 @@ body {
     color: #fff;
     background-color: #e0e5ec;
 }
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .player-container {
     position: relative;
     overflow: hidden;
@@ -128,44 +133,7 @@ input[type="range"]::-moz-range-thumb {
 
 @media only screen and (min-width: 768px){
 .player-container{
-    width: 70%;
-    height: 50%;
+    width: 22rem;
+    
  }
-.items-top{
-  margin-top: 15px;
-  padding-bottom: 1vh;
-}
-.item-top-left{
-  margin-left: 1vw;
-}
-.item-top-right{
-  margin-right: 1vw;
-}
-.song{
-  font-size: 20px;
-}
-.heart-icon{
-  font-size: 26px;
-  margin-right: 80px;
-}
-#seek-slider{
-  margin-left: 8vw;
-  width: 75%;
-}
-.current-time{
-  margin-left: 7vw;
-}
-.duration{
-  margin-right: 7vw;
-}
-.items-bottom{
-  font-size: 20px;
-}
-.shuffleBtn{
-  margin-left: 8vw;
-}
-.repeatBtn{
-  margin-right: 8vw;
-}
-
 }
