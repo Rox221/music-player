@@ -8,7 +8,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1500px;
     height: 100vh;
     color: #fff;
     background-color: #e0e5ec;
